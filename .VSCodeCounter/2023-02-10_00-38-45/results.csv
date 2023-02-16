@@ -1,0 +1,15 @@
+"filename", "language", "Python", "Database", "comment", "blank", "total"
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\__init__.py", "Python", 3, 0, 1, 2, 6
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\controllers\__init__.py", "Python", 2, 0, 0, 0, 2
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\controllers\service.py", "Python", 0, 0, 0, 1, 1
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\controllers\transactions.py", "Python", 6, 0, 0, 1, 7
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\controllers\users.py", "Python", 42, 0, 4, 14, 60
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\models\data\transactions.db", "Database", 0, 13, 0, 0, 13
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\models\data\users.db", "Database", 0, 16, 0, 0, 16
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\models\data_transactions\CRUD.py", "Python", 36, 0, 3, 19, 58
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\models\data_transactions\db.py", "Python", 20, 0, 0, 5, 25
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\models\data_users\CRUD.py", "Python", 63, 0, 7, 31, 101
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\models\data_users\db.py", "Python", 19, 0, 0, 9, 28
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\routes\transactions.py", "Python", 11, 0, 0, 3, 14
+"c:\Users\wgngu\Desktop\flask_Bank_Mar\app\routes\users.py", "Python", 26, 0, 0, 10, 36
+"Total", "-", 228, 29, 15, 95, 367

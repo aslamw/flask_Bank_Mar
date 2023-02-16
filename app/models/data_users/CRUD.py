@@ -1,6 +1,8 @@
+#imports
 from . import db
 from sqlalchemy.orm import Session
 from sqlalchemy import inspect, exists
+from werkzeug.security import generate_password_hash
 
 session = Session(db.engine)
 
@@ -72,10 +74,23 @@ def user_by_data(key,value):
     return data
 
 def update_user(id,data_up):
-
-    session.query(db.Users). \
-    filter(db.Users.id == id) \
-    .update({'name':data_up['name'],'email':data_up['email'], 'password':data_up['password']})
+    print(list(data_up.keys())[0])
+    
+    match list(data_up.keys())[0]:
+        case "email":
+            session.query(db.Users). \
+            filter(db.Users.id == id) \
+            .update({'email':data_up['email']})
+        case "name":
+            session.query(db.Users). \
+            filter(db.Users.id == id) \
+            .update({'name':data_up['name']})
+        case "password":
+            data_up["password"] = generate_password_hash(data_up["password"])
+            
+            session.query(db.Users). \
+            filter(db.Users.id == id) \
+            .update({'password':data_up['password']})
     
     session.commit()
     
