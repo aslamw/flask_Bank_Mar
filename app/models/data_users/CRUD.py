@@ -29,7 +29,7 @@ def exist_key(key,value):
     
 def object_as_dict(obj):
     """
-        conver os dados para dict
+        converter os dados para dict
     """
     return {c.key: getattr(obj, c.key)
             for c in inspect(obj).mapper.column_attrs}
